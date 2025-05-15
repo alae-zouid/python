@@ -9,20 +9,20 @@ def obtenir_info_anime(nom_introd):
         primer_anime = dades_anime['data'][0]
 
         titol = primer_anime['title']
-        sinopsis = primer_anime['synopsis']
-        puntuacio = primer_anime['score']
-        episodis = primer_anime['episodes']
-        url_anime = primer_anime['url']
-
         print(f"\nTítol: {titol}")
+
+        sinopsis = primer_anime['synopsis']
         print(f"\nSinopsis:\n{sinopsis}")
         
+        puntuacio = primer_anime['score']
         print("\nPuntuació:")
         print(f"- {puntuacio}")
 
+        episodis = primer_anime['episodes']
         print("\nEpisodis:")
         print(f"- {episodis}")
 
+        url_anime = primer_anime['url']
         print("\nURL:")
         print(f"- {url_anime}")
 
